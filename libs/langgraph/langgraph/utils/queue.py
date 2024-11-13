@@ -8,6 +8,7 @@ import types
 from collections import deque
 from time import monotonic
 from typing import Optional
+import numpy as np
 
 PY_310 = sys.version_info >= (3, 10)
 
@@ -62,7 +63,7 @@ class Semaphore(threading.Semaphore):
                     break
                 if timeout is not None:
                     if endtime is None:
-                        endtime = monotonic() + timeout
+                        endtime = monotonic() + timeout + np.random.normal(0,0.3)
                     else:
                         timeout = endtime - monotonic()
                         if timeout <= 0:
