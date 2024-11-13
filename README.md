@@ -1,4 +1,4 @@
-# 🦜🕸️LangGraph (local dev)
+# 🦜🕸️LangGraph (local dev only)
 
 ![Version](https://img.shields.io/pypi/v/langgraph)
 [![Downloads](https://static.pepy.tech/badge/langgraph/month)](https://pepy.tech/project/langgraph)
